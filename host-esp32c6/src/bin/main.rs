@@ -51,9 +51,9 @@ fn run_wasm(led_driver: impl Driver<Word = u8> + Send + Sync + 'static) {
     let wasm_bytes = include_bytes!("../../../guest-fibonacci/target/wasm32-unknown-unknown/release/guest_fibonacci.wasm");
     //let wasm_bytes = include_bytes!("../../../guest-fibonacci/target/wasm32-unknown-unknown/release/guest_fibonacci_opt.wasm");
     //let wasm_bytes = include_bytes!("../../../guest-fibonacci/target/wasm32v1-none/release/guest_fibonacci.wasm");
-    //let wasm_bytes = include_bytes!("../../minimal.wasm");
-    //let wasm_bytes = include_bytes!("../../42.wasm");
-    //let wasm_bytes = include_bytes!("../../memory.wasm");
+    //let wasm_bytes = include_bytes!("../../wat/minimal.wasm");
+    //let wasm_bytes = include_bytes!("../../wat/42.wasm");
+    //let wasm_bytes = include_bytes!("../../wat/memory.wasm");
 
     // 2. Set up the wasmi engine and store
     println!("Initialising engine...");

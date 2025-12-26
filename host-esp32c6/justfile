@@ -1,0 +1,7 @@
+build:
+    just -f wat/justfile build
+    cargo build --release
+
+clean:
+    cargo clean
+    just -f wat/justfile clean
