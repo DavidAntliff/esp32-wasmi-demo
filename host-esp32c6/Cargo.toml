@@ -25,6 +25,11 @@ wasmi = { version = "1.0.4", default-features = false, features = ["prefer-btree
 spin = "0.10.0"
 portable-atomic-util = { version = "0.2.4", features = ["alloc"] }
 
+blinksy = "0.11.0"
+blinksy-esp = "0.11.0"
+smart-leds = "0.4.0"
+heapless = "0.9.1"  # same as blinksy
+
 [profile.dev]
 # Rust debug is too slow.
 # For debug builds always builds with some optimization
