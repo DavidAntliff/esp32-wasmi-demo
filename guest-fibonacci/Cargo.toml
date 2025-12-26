@@ -1,0 +1,15 @@
+[package]
+name = "guest-fibonacci"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# No dependencies needed for this simple example
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
